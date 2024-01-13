@@ -1,15 +1,17 @@
 import { ITEMS_PER_PAGE } from '../../../constants.js'
 import Home from '../../home/index.js'
 
-
+//objet pagination
 const Pagination = {
     /**
      * 
      * @param {number} numberOfSensors 
      * @returns {number}
      */
-    getNumberOfPages: numberOfSensors => Math.ceil(numberOfSensors / ITEMS_PER_PAGE),
-    render: numberOfSensors => {
+    //methode de l'objet
+    getNumberOfPages: (numberOfSensors) => Math.ceil(numberOfSensors / ITEMS_PER_PAGE),
+    //methode de l'objet
+    render: (numberOfSensors) => {
         const numberOfPages = Pagination.getNumberOfPages(numberOfSensors)
 
         let $paginationList = '<ul class="pagination-list" data-testid="pagination-list">'
@@ -28,6 +30,7 @@ const Pagination = {
 
         return $paginationList
     },
+    //methode de l'objet
     handlePagination: () => {
         const $pagination = document.querySelector('.pagination-list')
 
