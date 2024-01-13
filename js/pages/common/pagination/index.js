@@ -7,8 +7,8 @@ const Pagination = {
      * @param {number} numberOfSensors 
      * @returns {number}
      */
-    getNumberOfPages: numberOfSensors => Math.ceil(numberOfSensors / ITEMS_PER_PAGE),
-    render: numberOfSensors => {
+    getNumberOfPages: (numberOfSensors) => Math.ceil(numberOfSensors / ITEMS_PER_PAGE),
+    render: (numberOfSensors) => {
         const numberOfPages = Pagination.getNumberOfPages(numberOfSensors)
 
         let $paginationList = '<ul class="pagination-list" data-testid="pagination-list">'

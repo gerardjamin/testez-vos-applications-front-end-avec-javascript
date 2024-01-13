@@ -3,7 +3,7 @@ import {
     USER_PASSWORD
 } from '../../constants.js'
 
-
+//ici test d'intégration
 const checkUserEmailInput = () => {
     const $userMailInput = document.querySelector('#user-email')
     const $userEmailErrorMSg = document.querySelector('.user-email-error-msg')
@@ -19,7 +19,7 @@ const checkUserEmailInput = () => {
     return isUserEmailValid
 }
 
-
+//ici test d'intégration
 const checkUserPasswordInput = () => {
     const $userPasswordInput = document.querySelector('#user-password')
     const $userPasswordErrorMSg = document.querySelector('.user-password-error-msg')

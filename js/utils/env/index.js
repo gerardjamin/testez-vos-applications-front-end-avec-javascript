@@ -4,3 +4,6 @@
  * @returns {boolean}
  */
 export const isInTestEnv = () => typeof process !== 'undefined' && process.env.NODE_ENV === 'test'
+
+//test unitaire:
+//est ce que la fonction isInTestEnv()  retourne true ou false  ??
