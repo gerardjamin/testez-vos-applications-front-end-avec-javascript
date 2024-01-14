@@ -1,5 +1,4 @@
 import { data } from '../../../data/mock-homepage-data.js'
-
 import { isInTestEnv } from '../env/index.js'
 
 export const retrieveSensorsData = () => isInTestEnv()
