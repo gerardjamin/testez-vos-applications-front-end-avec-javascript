@@ -6,7 +6,7 @@ describe('convertCelsiusToFahrenheit first Unit Test Suite', () => {
         expect(convertCelsiusToFahrenheit(-30)).toBe(-22)
     })
     
-    it('should convert -10 to 14', () => {
+    it(' should convert -10 to 14 ', () => {
         expect(convertCelsiusToFahrenheit(-10)).toBe(14)
     })
 })
