@@ -6,6 +6,10 @@
     getByTestId
 } from '@testing-library/dom'
 
+// jest sait simuler un DOM grâce au commentaire  < @jest-environment jsdom >   
+// L’apport principal de testing-library est de faciliter la sélection des
+//  nœuds sur le DOM pour réaliser ces tests comme la querie getByTestId($wrapper, "hello").
+
 // Je crée ma suite de test
 describe('Sample 1 Integration Test Suites', () => {
     // Je crée mon test

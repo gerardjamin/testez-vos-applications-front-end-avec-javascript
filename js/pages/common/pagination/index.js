@@ -1,13 +1,20 @@
 import { ITEMS_PER_PAGE } from '../../../constants.js'
 import Home from '../../home/index.js'
 
-//objet pagination
+//objet littéral pagination
 const Pagination = {
     /**
      * 
      * @param {number} numberOfSensors 
      * @returns {number}
      */
+
+    //partie statique de l'objet
+    //............
+    //............
+    
+
+    //partie dynamique de l'objet
     //methode de l'objet
     getNumberOfPages: (numberOfSensors) => Math.ceil(numberOfSensors / ITEMS_PER_PAGE),
     //methode de l'objet

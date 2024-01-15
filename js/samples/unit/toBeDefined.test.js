@@ -1,4 +1,7 @@
 /**
+ * @jest-environment: jest
+ */
+/**
  * 
  * @returns {string}
  */

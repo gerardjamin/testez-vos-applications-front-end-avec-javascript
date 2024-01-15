@@ -30,8 +30,11 @@ const routes = [
 
 const parseLocation = () => location.hash.slice(1).toLocaleLowerCase() || '/'
 
+console.log(location.hash.slice(1).toLocaleLowerCase() || '/')
+
 const bindEventListener = () => {
     if (parseLocation() === '/') {
+        //point d'entrée
         handleSignInForm()
     } else if (parseLocation() === '/home') {
         Pagination.handlePagination()
