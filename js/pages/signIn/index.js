@@ -1,5 +1,7 @@
 const SignIn = {
+//methode render()
     render: () => {
+
         return `
             <div class="sign-in-page">
                 <div class="sign-in-main-wrapper">

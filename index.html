@@ -12,10 +12,13 @@
   </head>
   <body>
     <div id="root"></div>
+
     <script type="module">
         import app from "/js/app.js"
 
+// chaque fois que la partie hash de l'URL change, la fonction app sera exécutée
         window.addEventListener('hashchange', app);
+// une fois que toute la page a été chargée, la fonction app sera exécutée      
         window.addEventListener('load', app);
     </script>
   </body>

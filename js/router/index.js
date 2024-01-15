@@ -24,8 +24,10 @@ const routes = [
         component: FacadeDetails
     },
 ]
-
+//la fonction retourne soit (location.hash.slice(1).toLocaleLowerCase()) ou (/)
 const parseLocation = () => location.hash.slice(1).toLocaleLowerCase() || '/'
+console.log(location)
+
 
 const findComponentByPath = (path, routes) => routes.find(r => r.path.match(new RegExp(`^\\${path}$`, 'gm'))) || undefined;
 
@@ -35,13 +37,14 @@ const bindEventListener = () => {
     }
 }
 
+// !attention module asynchrone
 export const router = async () => {
     // Find the component based on the current path
     const path = parseLocation()
 
     // If there is not matching route, get the "Error" Component
+    //attribue une valeur par défaut(error page) à component lors de la déstructuration si objet vide
     const { component = ErrorPage } = findComponentByPath(path, routes) || {}
-    
     // Render the component in the app placeholder
     document.querySelector('#root').innerHTML = await component.render()
 

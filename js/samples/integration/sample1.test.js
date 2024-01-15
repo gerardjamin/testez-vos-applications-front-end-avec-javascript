@@ -1,7 +1,9 @@
 /**
  * @jest-environment jsdom
  */
-// Ici j'importe DOM Test Librairy
+//j'ai signalé à jest que je suis dans un environnement qui utilise le DOM
+
+// Ici j'importe la methode getByTestId qui se trouve dans le module DOM Test Librairy
  import {
     getByTestId
 } from '@testing-library/dom'
