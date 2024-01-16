@@ -1,7 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-
+//je declare a jest que je vais faire des test dans le DOM
 //j'importe les librairies de jest-dom
 import '@testing-library/jest-dom'
 //j'importe la querie getByTestId couplée avec la variable data-testid nous permettra
