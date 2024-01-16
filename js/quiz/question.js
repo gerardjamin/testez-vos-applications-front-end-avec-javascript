@@ -2,10 +2,10 @@ export const renderQuestion = (name) => {
     const $wrapper = document.createElement('div')
     $wrapper.classList.add('hello-question')
 
-    let text = '<div data-testid="question-test">'
+    let text = '<div>'
 
     if (!name) {
-        text += '<p>Hello, Question?</p>'
+        text += '<p data-testid="question-test">Hello, Question?</p>'
     } else if (name === 'Thomas') {
         text += '<p>Hello cher Auteur</p>'
     } else {

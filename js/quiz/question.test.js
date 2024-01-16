@@ -14,4 +14,10 @@ describe('RenderQuestion Integration Test Suites', () => {
             getByTestId(renderQuestion(), 'question-test')
         ).toBeDefined()
     })
+
+    it('should have Hello, Question?', () => {
+        expect(
+            getByTestId(hello-question, 'question-test')
+        ).toBeDefined()
+    })
 })
